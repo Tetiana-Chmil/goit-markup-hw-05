@@ -1,3 +1,3 @@
-# goit-markup-hw-02
+# goit-markup-hw-03
 
 This is a homework page for GoIT.
