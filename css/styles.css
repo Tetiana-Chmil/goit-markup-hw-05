@@ -156,6 +156,9 @@ address {
     text-align: center;
     color: #ffffff;
     margin-bottom: 48px;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-button {
@@ -170,6 +173,7 @@ address {
     display: block;
     padding: 16px 32px;
     margin: 0 auto;
+    min-width: 169px;
 }
 
 .hero-button:hover, .hero-button:focus {
@@ -213,12 +217,12 @@ address {
 .team-list-item {
     background-color: #ffffff;
     flex-basis: calc((100% - 72px)/4);
-    border-radius: 0 4px 4px;
+    border-radius: 0 0 4px 4px;
     padding-bottom: 32px;
 }
 
-.team-list-img {
-    margin-bottom: 32px;
+.team-list-content {
+    padding: 32px 0;
 }
 
 .team-list-title {
@@ -242,7 +246,8 @@ address {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .portfolio-list-item {
@@ -264,7 +269,7 @@ address {
 }
 
 .portfolio-list-content {
-    padding: 32px 0 32px 16px;
+    padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
 }
@@ -284,6 +289,8 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-logo-accent {
@@ -294,6 +301,5 @@ address {
     font-size: 16px;
     color: #f4f4fd;
     width: 264px;
-    margin-top: 16px;
 }
 /* ================ FOOTER STYLES ================ */
