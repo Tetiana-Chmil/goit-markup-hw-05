@@ -68,6 +68,10 @@ img {
     color: #2e2f42;
     margin-bottom: 72px;
 }
+
+svg {
+    fill: none;
+}
 /* ================ COMMON STYLES ================ */
 
 /* ================ HEADER STYLES ================ */
@@ -119,6 +123,21 @@ img {
     color: #404bbf;
 }
 
+.current {
+    position: relative;
+}
+
+.current:active::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+}
+
 address {
     font-style: normal;
 }
@@ -146,6 +165,10 @@ address {
     background-color: #2e2f42;
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url("../images/people-office.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .page-title {
@@ -191,6 +214,14 @@ address {
     flex-basis: calc((100% - 72px)/4)
 }
 
+.benefits-list-icon {
+    padding: 24px 100px;
+    background-color: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
 .benefits-list-title {
     font-weight: 500;
     font-size: 20px;
@@ -219,7 +250,6 @@ address {
     background-color: #ffffff;
     flex-basis: calc((100% - 72px)/4);
     border-radius: 0 0 4px 4px;
-    padding-bottom: 32px;
 }
 
 .team-list-content {
