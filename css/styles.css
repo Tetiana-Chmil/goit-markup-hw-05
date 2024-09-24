@@ -129,6 +129,7 @@ svg {
 
 .current {
     position: relative;
+    color: #404bbf;
 }
 
 .current::after {
@@ -389,6 +390,7 @@ address {
 
 .page-footer .container {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-logo {
