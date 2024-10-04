@@ -509,12 +509,190 @@ address {
 .modal {
     position: relative;
     width: 408px;
-    height: 80%;
     max-height: 585px;
     margin-top: 80px;
     overflow: auto;
     padding: 24px;
+    padding-top: 72px;
     border-radius: 4px;
     background-color: #fcfcfc;
+}
+
+.modal-close-button {
+    background-color: #e7e9fc;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-icon {
+    fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus {
+    border: none;
+    background-color: #404bbf;
+}
+
+.modal-close-button:hover .modal-close-icon,
+.modal-close-button:focus .modal-close-icon {
+    fill: #fff;
+}
+
+.modal-slogan {
+    font-weight: 500;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 16px;
+}
+
+.order-form-field-wrapper:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.order-form-field-label {
+    display: block;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    margin-bottom: 4px;
+}
+
+.order-form-input-wrapper {
+    position: relative;
+}
+
+.order-form-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    background-color: transparent;
+    padding-left: 38px;
+}
+
+.order-form-input:focus {
+    outline: none;
+    border-color: #4d5ae5;
+}
+
+.order-form-input-icon {
+    fill: #2e2f42;
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-form-input:focus + .order-form-input-icon {
+    fill: #4d5ae5;
+}
+
+.order-form-comment {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 360px;
+    height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    padding: 8px 16px;
+    background-color: transparent;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-form-comment::placeholder {
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.order-form-comment:focus {
+    outline: none;
+    border-color: #4d5ae5;
+}
+
+.order-form-field-wrapper:last-child {
+    margin-bottom: 16px;
+}
+
+.order-form-checkbox-wrapper {
+    margin-bottom: 24px;
+}
+
+.order-form-checkbox-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+
+.order-form-policy-link {
+    line-height: 1.33;
+    text-decoration: underline;
+    color: #4d5ae5;
+}
+
+.order-form-custom-checkbox {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    fill: none;
+    margin-right: 8px;
+}
+
+.order-form-checkbox:checked 
+  + .order-form-checkbox-label
+  > .order-form-custom-checkbox {
+    background-color: #4d5ae5;
+    border: none;
+}
+
+.order-form-checkbox:checked 
+  + .order-form-checkbox-label
+  > .order-form-custom-checkbox
+  > .order-form-checkbox-icon {
+    fill: #f4f4fd;
+}
+
+.order-form-submit-button {
+    border-radius: 4px;
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    background-color: #4d5ae5;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-form-submit-button:hover,
+.order-form-submit-button:focus {
+    background-color: #404bbf;
 }
 /* ============= MODAL WINDOW STYLES ============= */
