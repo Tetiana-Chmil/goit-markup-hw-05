@@ -417,7 +417,7 @@
     <!-- Modal window -->
      <div class="modal-backdrop">
         <div class="modal">
-            <button class="modal-close-button">
+            <button class="modal-close-button" type="button">
                 <svg class="modal-close-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
@@ -425,7 +425,7 @@
             <p class="modal-slogan">
                 Leave your contacts and we will call you back
             </p>
-            <form action="" class="order-form">
+            <form class="order-form">
                 <div class="order-form-field-wrapper">
                     <label class="order-form-field-label" for="user-name">Name</label>
                     <div class="order-form-input-wrapper">
@@ -453,20 +453,20 @@
                         </svg>
                     </div>
                 </div>
-                <div class="order-form-field-wrapper">
+                <div class="order-form-comment-wrapper">
                     <label class="order-form-field-label" for="user-comment">Comment</label>
-                    <textarea class="order-form-comment" name="user-comment" id="user-comment" placeholder="Enter text"></textarea>
+                    <textarea class="order-form-comment" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
                 </div>
                 <div class="order-form-checkbox-wrapper">
                     <input 
                         class="order-form-checkbox visually-hidden"
                         type="checkbox"
-                        id="privacy-policy"
-                        name="privacy-policy"
+                        id="user-privacy"
+                        name="user-privacy"
                         value="true"
                         required
                     />
-                    <label class="order-form-checkbox-label" for="privacy-policy">
+                    <label class="order-form-checkbox-label" for="user-privacy">
                         <span class="order-form-custom-checkbox">
                             <svg class="order-form-checkbox-icon" width="10" height="8">
                                 <use href="./images/icons.svg#icon-checkmark"></use>
