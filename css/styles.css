@@ -453,25 +453,27 @@ address {
 .footer-subscribe-form-input {
     width: 264px;
     height: 40px;
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
     border-radius: 4px;
     background-color: transparent;
-    padding: 8px 16px;
+    padding-left: 16px;
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    color: #fff;
+    color: #ffffff;
 }
 
 .footer-subscribe-form-input::placeholder {
-    color: #fff;
+    color: #ffffff;
 }
 
 .footer-subscribe-form-button {
     font-weight: 500;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     text-align: center;
-    color: #fff;
+    color: #ffffff;
+    min-width: 165px;
     background-color: #4d5ae5;
     border-radius: 4px;
     border: none;
@@ -498,7 +500,8 @@ address {
 
     opacity: 0;
     pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-backdrop.is-open {
@@ -546,7 +549,7 @@ address {
 
 .modal-close-button:hover .modal-close-icon,
 .modal-close-button:focus .modal-close-icon {
-    fill: #fff;
+    fill: #ffffff;
 }
 
 .modal-slogan {
@@ -683,7 +686,7 @@ address {
     font-weight: 500;
     letter-spacing: 0.04em;
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     display: block;
     margin: 0 auto;
     background-color: #4d5ae5;
